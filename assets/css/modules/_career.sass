@@ -1,0 +1,205 @@
+@keyframes slideInFromLeft
+    0%
+        transform: translateY(45px)
+        transition: transform 0.4s ease-in-out
+        opacity: 0
+    100%
+        transform: translateY(0)
+        opacity: 1
+    
+body
+    animation: 0.5s ease-out 0s 1 slideInFromLeft
+header
+    text-align: center
+    margin-top: 20px
+    h2
+        font-size: 32px
+        font-weight: bold
+        text-transform: uppercase
+        position: relative
+        color: $white
+    h2::before
+        content: ""
+        position: absolute
+        width: 100px
+        height: 1px
+        display: block
+        background-color: #dddddd9a
+        bottom: 1px
+        left: calc(50% - 50px)
+    h2::after
+        content: ""
+        transition: 1s 
+        position: absolute
+        width: 40px
+        height: 3px
+        display: block
+        background-color: $highlight
+        bottom: 0px
+        left: calc(50% - 20px)
+header:hover
+    h2::after
+        left: calc(50% - 35px)
+        width: 70px
+
+.container
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    width: 80%
+    max-width: 80%
+    height: 80%
+    margin: 100px 0 0 100px
+    @media (max-width: 768px) 
+        margin: 0 0 0 20px
+    .col1
+        width: 100%
+        @media (min-width: 768px) 
+            width: 48%
+        height: 100%
+        display: flex
+        flex-direction: column
+        h1
+            padding: 2px
+            font-size: 25px
+            font-weight: 500
+            text-align: center
+            width: 150px
+            background-color: $highlight
+        .resume-item1,.resume-item2,.resume-item3
+            border-left: 1px solid $white
+            padding-left:15px
+            position: relative
+            h3
+                margin: 0 0 0 20px
+                text-transform: uppercase
+                color: #ea4c89
+        .resume-item1::before
+            content: ""
+            position: absolute
+            left: -9px
+            width: 14px
+            height: 14px
+            border-radius: 50px
+            background: $black
+            border: 2px solid $white
+        .resume-item2,.resume-item3
+            margin-top: 10px
+            h4
+                padding: 3px
+                margin: 4px 0 0 40px
+                text-align: center
+                width: 90px
+                background-color: #f7f8f941 
+            h5
+                font-weight: 400
+                font-size: 13px
+                margin: 10px 0 0 0
+        .resume-item2::before
+            content: ""
+            position: absolute
+            left: -9px
+            width: 14px
+            height: 14px
+            border-radius: 50px
+            background: $black
+            border: 2px solid $white
+        .resume-item3::before
+            content: ""
+            position: absolute
+            left: -9px
+            width: 14px
+            height: 14px
+            border-radius: 50px
+            background: $black
+            border: 2px solid $white
+    .col2
+        width: 100%
+        @media (min-width: 768px) 
+            width: 48%
+        height: 100%
+        display: flex
+        flex-direction: column
+        h1
+            padding: 2px
+            font-size: 25px
+            font-weight: 500
+            text-align: center
+            width: 330px
+            background-color: $highlight
+        .resume-item1,.resume-item2,.resume-item3
+            border-left: 1px solid $white
+            padding-left:15px
+            position: relative
+            h3
+                margin: 0 0 0 20px
+                text-transform: uppercase
+                color: #ea4c89
+            h4
+                padding: 3px
+                margin: 4px 0 0 20px
+                text-align: center
+                width: 110px
+                background-color: #f7f8f941 
+            h5
+                font-weight: 400
+                font-size: 13px
+                margin: 10px 0 0 0
+        .resume-item1::before
+            content: ""
+            position: absolute
+            left: -9px
+            width: 14px
+            height: 14px
+            border-radius: 50px
+            background: $black
+            border: 2px solid $white
+        .resume-item2::before
+            content: ""
+            position: absolute
+            left: -9px
+            width: 14px
+            height: 14px
+            border-radius: 50px
+            background: $black
+            border: 2px solid $white
+            z-index: 1
+        .resume-item3::before
+            content: ""
+            position: absolute
+            left: -9px
+            width: 14px
+            height: 14px
+            border-radius: 50px
+            background: $black
+            border: 2px solid $white
+.endL
+    position: relative
+    width: 90px
+    float: right
+    margin: 30px 100px 0 0
+    padding: 4px
+    text-decoration: none
+    color: $white
+    font-size: 20px
+    font-weight: 700
+    text-transform: uppercase
+    .btn-background
+        position: absolute
+        top: 0
+        left: 0px
+        @media (min-width: 768px)
+            left: 23px 
+        right: 0
+        height: 100%
+        background-color: $highlight
+        z-index: -1
+        transition: left .2s ease-in-out
+    &:hover
+        .btn-background
+            left: 0
+    @media (max-width: 768px) 
+        float: none
+        margin: 30px auto 20px auto
+    
