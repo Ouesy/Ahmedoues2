@@ -272,6 +272,46 @@ $( document ).ready(function() {
     });
 
   }
+  function show(buttonClass,className){
+    var object = $(buttonClass).closest(".slider--item-center");
+    if(object.length){
+      $(className).css("display","flex");
+      $(".slider--item-right").css("display","none");
+      $(".slider--item-left").css("display","none");
+      $(".slider--prev").css("display","none");
+      $(".slider--next").css("display","none");
+
+    }
+  }
+  function hide(className){
+    $(className).css("display","none");
+    $(".slider--item-right").css("display","flex");
+    $(".slider--item-left").css("display","flex");
+    $(".slider--prev").css("display","flex");
+    $(".slider--next").css("display","flex");
+  }
+  
+  $("#show1").click(function(){
+    show("#show1",".pop-up_container1");
+  });
+  $("#show2").click(function(){
+    show("#show2",".pop-up_container2");
+  });
+  $("#show3").click(function(){
+    show("#show3",".pop-up_container3");
+  });
+
+  $("#hide1").click(function(){
+    hide(".pop-up_container1");
+  });
+
+  $("#hide2").click(function(){
+    hide(".pop-up_container2");
+  });
+
+  $("#hide3").click(function(){
+    hide(".pop-up_container3");
+  });
 
   outerNav();
   workSlider();
