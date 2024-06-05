@@ -661,6 +661,53 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
+
+.work--lockup button{
+  background-color: #0c0c0c;
+  border: none;
+}
+.work--lockup .pop-up_container1,
+.work--lockup .pop-up_container2,
+.work--lockup .pop-up_container3{
+  position: absolute;
+  bottom: 0;
+  right: -250px;
+  background-color: #0c0c0c;
+  height: 500px;
+  width: 800px;
+  border-radius: 15px;
+  display: none;
+  flex-direction: column;
+}
+
+.work--lockup .pop-up_container1 .pop-up_back1,
+.work--lockup .pop-up_container2 .pop-up_back2,
+.work--lockup .pop-up_container3 .pop-up_back3{
+  height: 7%;
+  width: 10%;
+  border: 1px solid blue;
+  display: flex;
+}
+.work--lockup .pop-up_container1 .pop-up_back1 button,
+.work--lockup .pop-up_container2 .pop-up_back2 button,
+.work--lockup .pop-up_container3 .pop-up_back3 button{
+  height: 100%;
+  width: 100%;
+}
+.work--lockup .pop-up_container1 .pop-up_video1,
+.work--lockup .pop-up_container2 .pop-up_video2,
+.work--lockup .pop-up_container3 .pop-up_video3{
+  height: 90%;
+  margin-top: 5px;
+  display: flex;
+  border-radius: 15px;
+}
+.work--lockup .pop-up_container1 .pop-up_video1 iframe,
+.work--lockup .pop-up_container2 .pop-up_video2 iframe,
+.work--lockup .pop-up_container3 .pop-up_video3 iframe{
+  height: 100%;
+  width: 100%;
+}
 .work--lockup .slider--next svg,
 .work--lockup .slider--prev svg {
   width: 20px;
