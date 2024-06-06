@@ -289,6 +289,10 @@ $( document ).ready(function() {
     $(".slider--item-left").css("display","flex");
     $(".slider--prev").css("display","flex");
     $(".slider--next").css("display","flex");
+    $("iframe").each(function() { 
+      var src= $(this).attr('src');
+      $(this).attr('src',src);  
+    });
   }
   
   $("#show1").click(function(){
