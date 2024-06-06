@@ -802,15 +802,15 @@ body {
   
   .work--lockup .pop-up_container1,
   .work--lockup .pop-up_container3{
-    width: 400px;
-    height: 400px;
-    right: -71px;
+    width: 450px;
+    height: 500px;
+    right: -95px;
     align-items: center;
   }
   .work--lockup .pop-up_container2{
-    width: 400px;
-    height: 400px;
-    right: -43px;
+    width: 450px;
+    height: 500px;
+    right: -67px;
     align-items: center;
   }
   .work--lockup .pop-up_container1 .pop-up_video1,
@@ -825,6 +825,22 @@ body {
     width: 70%;
   }
 }
+@media (max-width: 450px) {
+  .work--lockup .pop-up_container1,
+  .work--lockup .pop-up_container3{
+    width: 350px;
+    height: 400px;
+    right: -45px;
+    align-items: center;
+  }
+  .work--lockup .pop-up_container2{
+    width: 350px;
+    height: 400px;
+    right: -17px;
+    align-items: center;
+  }
+}
+
 .about {
   position: relative;
   display: flex;
