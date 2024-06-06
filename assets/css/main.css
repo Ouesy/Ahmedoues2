@@ -666,6 +666,7 @@ body {
   background-color: transparent;
   border: none;
 }
+
 .work--lockup .pop-up_container1,
 .work--lockup .pop-up_container2,
 .work--lockup .pop-up_container3{
@@ -733,7 +734,50 @@ body {
   .work--lockup .slider--prev {
     top: 130px;
   }
+  .work--lockup .pop-up_container1,
+  .work--lockup .pop-up_container3{
+    right: -270px;
+  }
+  .work--lockup .pop-up_container1 .pop-up_back1,
+  .work--lockup .pop-up_container2 .pop-up_back2,
+  .work--lockup .pop-up_container3 .pop-up_back3{
+    margin-left: 1px;
+  }
 }
+
+@media (max-width: 800px) {
+  .work--lockup .slider--item-left,
+  .work--lockup .slider--item-left button,
+  .work--lockup .slider--item-right,
+  .work--lockup .slider--item-right button {
+    display: none;
+  }
+
+  .work--lockup .pop-up_container1,
+  .work--lockup .pop-up_container3{
+    width: 600px;
+    height: 400px;
+    right: -170px;
+    align-items: center;
+  }
+  .work--lockup .pop-up_container2{
+    width: 600px;
+    height: 400px;
+    right: -141px;
+    align-items: center;
+  }
+  .work--lockup .pop-up_container1 .pop-up_video1,
+  .work--lockup .pop-up_container2 .pop-up_video2,
+  .work--lockup .pop-up_container3 .pop-up_video3{
+    width: 100%;
+  }
+  .work--lockup .pop-up_container1 .pop-up_back1,
+  .work--lockup .pop-up_container2 .pop-up_back2,
+  .work--lockup .pop-up_container3 .pop-up_back3{
+    width: 70%;
+  }
+}
+
 @media (max-width: 767px) {
   .work--lockup .slider {
     width: 75%;
@@ -755,8 +799,30 @@ body {
   .work--lockup .slider {
     width: auto;
   }
-  .work--lockup .slider--item-left, .work--lockup .slider--item-right {
-    display: none;
+  
+  .work--lockup .pop-up_container1,
+  .work--lockup .pop-up_container3{
+    width: 400px;
+    height: 400px;
+    right: -71px;
+    align-items: center;
+  }
+  .work--lockup .pop-up_container2{
+    width: 400px;
+    height: 400px;
+    right: -43px;
+    align-items: center;
+  }
+  .work--lockup .pop-up_container1 .pop-up_video1,
+  .work--lockup .pop-up_container2 .pop-up_video2,
+  .work--lockup .pop-up_container3 .pop-up_video3{
+    width: 100%;
+    height: 60%;
+  }
+  .work--lockup .pop-up_container1 .pop-up_back1,
+  .work--lockup .pop-up_container2 .pop-up_back2,
+  .work--lockup .pop-up_container3 .pop-up_back3{
+    width: 70%;
   }
 }
 .about {
@@ -1452,9 +1518,7 @@ body {
   .intro--banner h1 {
     font-size: 44px;
   }
-  .intro--banner img {
-    width: 330px;
-  }
+
   .intro--options {
     display: block;
   }
